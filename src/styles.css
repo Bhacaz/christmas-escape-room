@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 body {
   margin: 0;
 }
@@ -11,12 +13,19 @@ mat-toolbar {
   padding: 25px;
 }
 
-.bottom-center {
+.full-width {
+  width: 100%;
+}
+
+.bottom {
   bottom: 0;
+  padding-bottom: 25px;
+}
+
+.center {
   width: 100%;
   position: fixed;
   text-align: center;
-  padding-bottom: 25px;
 }
 
 .red {
@@ -25,4 +34,25 @@ mat-toolbar {
 
 .color-white {
   color: white;
+}
+
+.color-red {
+  color: #f44336;
+}
+
+.color-green {
+  color: #388e3c;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.big-text {
+  font-size: xx-large !important;
+}
+
+.em {
+  height: 1em;
+  width:  1em;
 }
