@@ -5,8 +5,7 @@ body {
 }
 
 mat-toolbar {
-  background-color: forestgreen;
-  color: white;
+  background-color: #6abf69 !important;
 }
 
 .container {
@@ -15,6 +14,10 @@ mat-toolbar {
 
 .full-width {
   width: 100%;
+}
+
+.half-width {
+  width: 50%;
 }
 
 .bottom {

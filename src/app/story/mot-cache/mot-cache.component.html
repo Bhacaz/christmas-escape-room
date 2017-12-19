@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <span>Mot caché</span>
+</mat-toolbar>
+
+<div class="container">
+  <h3 class="text-center">
+    Voir la grille de lettre. <i class="em em-newspaper"></i>
+  </h3>
+
+  <mat-form-field class="full-width">
+
+    <mat-icon *ngIf="!goodAnswerChecker()" matPrefix>chevron_right</mat-icon>
+    <mat-icon *ngIf="goodAnswerChecker()" matPrefix class="color-green">check_circle</mat-icon>
+    <input matInput type="text" [(ngModel)]="input" class="text-center big-text"/>
+
+    <button mat-icon-button *ngIf="input" matSuffix (click)="input=''">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+</div>

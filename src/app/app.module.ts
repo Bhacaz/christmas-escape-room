@@ -13,6 +13,12 @@ import {routes} from "./app.routes";
 import { MariageComponent } from './story/mariage/mariage.component';
 import {FormsModule} from "@angular/forms";
 import {TimerService} from "./timer/timer.service";
+import { MotCacheComponent } from './story/mot-cache/mot-cache.component';
+import { ObjectPerduComponent } from './story/object-perdu/object-perdu.component';
+import { CarreParfaitComponent } from './story/carre-parfait/carre-parfait.component';
+import { LatinComponent } from './story/latin/latin.component';
+import { ChimieComponent } from './story/chimie/chimie.component';
+import { EncoreCarreComponent } from './story/encore-carre/encore-carre.component';
 
 
 @NgModule({
@@ -20,7 +26,13 @@ import {TimerService} from "./timer/timer.service";
     AppComponent,
     MainComponent,
     IntroComponent,
-    MariageComponent
+    MariageComponent,
+    MotCacheComponent,
+    ObjectPerduComponent,
+    CarreParfaitComponent,
+    LatinComponent,
+    ChimieComponent,
+    EncoreCarreComponent
   ],
   imports: [
     BrowserModule,

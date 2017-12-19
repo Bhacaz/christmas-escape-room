@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <span>Encore des carrés</span>
+</mat-toolbar>
+
+<div class="container">
+  <h3 class="text-center">
+    Que les couleurs du viel immense <br>
+    Un jour de mai tout ricommence <br>
+    Tendre est la nuit, nes illusyons qui passent <br>
+    Les idées de bonheur, <br>
+    Je luis un voleur d'éternité dans un monde blessé
+  </h3>
+  <h3 class="full-width text-center">
+    <i class="em em-musical_note"></i>
+  </h3>
+
+  <mat-form-field class="full-width">
+
+    <mat-icon *ngIf="!goodAnswerChecker()" matPrefix>chevron_right</mat-icon>
+    <mat-icon *ngIf="goodAnswerChecker()" matPrefix class="color-green">check_circle</mat-icon>
+    <input matInput type="text" [(ngModel)]="input" class="text-center big-text"/>
+
+    <button mat-icon-button *ngIf="input" matSuffix (click)="input=''">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+</div>

@@ -1,0 +1,31 @@
+<mat-toolbar>
+  <span>Rien ne se perd...</span>
+</mat-toolbar>
+
+<div class="container">
+  <h3 class="text-center">
+    22 - 88 - 7 - 32 - 8 - 10
+  </h3>
+
+    <span class="text-center full-width" style="display: block">
+      <mat-icon>shuffle</mat-icon>
+    </span>
+
+  <mat-form-field class="full-width">
+
+    <mat-icon *ngIf="!goodAnswerChecker()" matPrefix>chevron_right</mat-icon>
+    <mat-icon *ngIf="goodAnswerChecker()" matPrefix class="color-green">check_circle</mat-icon>
+    <input matInput type="text" [(ngModel)]="input" class="text-center big-text"/>
+
+    <button mat-icon-button *ngIf="input" matSuffix (click)="input=''">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-form-field>
+
+
+</div>
+<div class="bottom center">
+  <a mat-fab class="red" routerLink="/5">
+    <mat-icon class="md-24 color-white">arrow_back</mat-icon>
+  </a>
+</div>
