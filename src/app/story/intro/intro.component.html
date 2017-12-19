@@ -1,27 +1,20 @@
-<mat-toolbar>Hohoho</mat-toolbar>
+<mat-toolbar>Pôle-tail Nord</mat-toolbar>
 <div class="container">
-  <p>
-    Bonjour, cher petits lutins,
-  </p>
+  <div class="full-width text-center">
+    <mat-form-field class="text-center" style="margin-top: 50px">
+      <input matInput placeholder="Nom d'utilisateur" value="Père Nole" disabled>
+    </mat-form-field>
+    <mat-form-field class="text-center">
+      <mat-icon *ngIf="wrongPassword" matSuffix class="color-red">highlight_off</mat-icon>
+      <input matInput type="password" placeholder="Mot de passe" [(ngModel)]="input">
+    </mat-form-field>
+
+    <button mat-raised-button color="warn" (click)="login()">Connexion</button>
+  </div>
 
   <p>
-    Il y a très longtemps, j’ai demandé à Mère Noel d’écrire et de cacher le mot de passe administrateur
-    du Pôle-tail Nord. Cette année, je ne sais pas pourquoi j’ai oublié le mot de passe et quand j’ai demandé
-    à Mère Noel elle ma dit qu’elle la cacher sous forme de chasse au trésor avec des énigmes et de puzzle.
-  </p>
-  Après 3 long mois de à tenté de percer ces mystère sans succès, il est trop gênant pour mois de
-  dire à Mère Noel que je suis incapable contenu du premier indice.
-  <p>
-    S’il vous plait petits lutins, vous êtes la dernière chance de sauver Noel!
-  </p>
-  <p>
-    Père Noel.
+    <a routerLink="/1">Mot de passe oublié?</a>
   </p>
 
-</div>
-<div class="bottom center">
-  <a mat-fab class="red" routerLink="/1">
-    <mat-icon class="md-24 color-white">arrow_forward</mat-icon>
-  </a>
 </div>
 

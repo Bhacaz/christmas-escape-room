@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-intro',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  input = '';
+  wrongPassword: boolean = false;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  login() {
+    if (this.input === 'sapin') {
+      return this.router.navigate(['/end']);
+    }
+    this.input = '';
+    this.wrongPassword = true;
   }
 
 }
