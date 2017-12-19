@@ -7,6 +7,7 @@ import {CarreParfaitComponent} from "./story/carre-parfait/carre-parfait.compone
 import {LatinComponent} from "./story/latin/latin.component";
 import {ChimieComponent} from "./story/chimie/chimie.component";
 import {EncoreCarreComponent} from "./story/encore-carre/encore-carre.component";
+import {EndComponent} from "./end/end.component";
 
 export const routes: Routes = [
   { path: '', redirectTo: 'intro', pathMatch: 'full' },
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: '5', component: LatinComponent },
   { path: '6', component: ChimieComponent },
   { path: '7', component: EncoreCarreComponent },
+  { path: 'end', component: EndComponent },
   { path: '**', redirectTo: 'intro' }
 ];

@@ -22,7 +22,7 @@ export class EncoreCarreComponent implements OnInit {
     if (this.goodAnswerFound) { return true; }
     if(this.input.toString().toLowerCase() === this.answer) {
       this.goodAnswerFound = true;
-      this._timer.nextStep('8', 2000);
+      this._timer.nextStep('end', 2000);
       return this.goodAnswerFound;
     }
     return this.goodAnswerFound;

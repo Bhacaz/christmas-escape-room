@@ -19,6 +19,7 @@ import { CarreParfaitComponent } from './story/carre-parfait/carre-parfait.compo
 import { LatinComponent } from './story/latin/latin.component';
 import { ChimieComponent } from './story/chimie/chimie.component';
 import { EncoreCarreComponent } from './story/encore-carre/encore-carre.component';
+import { EndComponent } from './end/end.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { EncoreCarreComponent } from './story/encore-carre/encore-carre.componen
     CarreParfaitComponent,
     LatinComponent,
     ChimieComponent,
-    EncoreCarreComponent
+    EncoreCarreComponent,
+    EndComponent
   ],
   imports: [
     BrowserModule,
